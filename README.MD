@@ -1,3 +1,5 @@
+A sample output from the program's Main
+	
 	Finding best prices for availabilityZone:	{ZoneName: us-east-1a,State: available,RegionName: us-east-1,Messages: []}
 	Finding spot prices for	{ZoneName: us-east-1a,State: available,RegionName: us-east-1,Messages: []}	[m3.large, m3.medium]
 	masterSpotPrice:	0.016600
