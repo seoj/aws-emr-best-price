@@ -1,9 +1,9 @@
 Given
 - For all AZ's
 - Master instance type of m3.large
-- Master instnace's durability threshold at .2 (20%)
+- Master instance's durability threshold at .2 (20%)
 - Core instance type of m3.medium
-- Core instnace's durability threshold at .2 (20%)
+- Core instance's durability threshold at .2 (20%)
 
 A sample output from the program's Main
 	
