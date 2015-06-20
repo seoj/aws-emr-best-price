@@ -1,3 +1,10 @@
+Given
+- For all AZ's
+- Master instance type of m3.large
+- Master instnace's durability threshold at .2 (20%)
+- Core instance type of m3.medium
+- Core instnace's durability threshold at .2 (20%)
+
 A sample output from the program's Main
 	
 	Finding best prices for availabilityZone:	{ZoneName: us-east-1a,State: available,RegionName: us-east-1,Messages: []}
