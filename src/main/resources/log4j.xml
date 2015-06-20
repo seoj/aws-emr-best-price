@@ -6,6 +6,10 @@
          <param name="ConversionPattern" value="%d %p %c - %m%n" />
       </layout>
    </appender>
+   <logger name="my.seoj.aws.emr.best.price" additivity="false">
+      <level value="DEBUG"></level>
+      <appender-ref ref="CONSOLE" />
+   </logger>
    <root>
       <level value="WARN"></level>
       <appender-ref ref="CONSOLE" />
