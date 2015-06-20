@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import com.amazonaws.services.ec2.AmazonEC2;
+import com.amazonaws.services.ec2.AmazonEC2Client;
 import com.google.gson.Gson;
 
 @Configuration
@@ -22,5 +24,11 @@ public class BpcConfig
    public ScriptEngineManager scriptEngineManager()
    {
       return new ScriptEngineManager();
+   }
+
+   @Bean
+   public AmazonEC2 ec2()
+   {
+      return new AmazonEC2Client();
    }
 }

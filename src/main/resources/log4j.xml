@@ -3,7 +3,7 @@
 <log4j:configuration>
    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
       <layout class="org.apache.log4j.PatternLayout">
-         <param name="ConversionPattern" value="%d %p %c - %m%n" />
+         <param name="ConversionPattern" value="%m%n" />
       </layout>
    </appender>
    <logger name="my.seoj.aws.emr.best.price" additivity="false">

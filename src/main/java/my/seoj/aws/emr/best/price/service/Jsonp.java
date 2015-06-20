@@ -10,7 +10,6 @@ import javax.script.ScriptException;
 import my.seoj.aws.emr.best.price.model.HttpRequest;
 import my.seoj.aws.emr.best.price.model.HttpResponse;
 
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +19,6 @@ import com.google.gson.JsonElement;
 @Service
 public class Jsonp
 {
-   private static final Logger logger = Logger.getLogger(Jsonp.class);
-
    @Autowired
    private Http http;
 
@@ -33,8 +30,6 @@ public class Jsonp
 
    public JsonElement request(String url, String callback) throws MalformedURLException, IOException
    {
-      logger.debug("request(): url = " + url + ", callback = " + callback);
-
       String jsonpString;
       HttpRequest httpRequest = new HttpRequest();
       httpRequest.setUrl(url);
@@ -54,7 +49,6 @@ public class Jsonp
       }
 
       JsonElement responseJson = gson.fromJson(jsonString, JsonElement.class);
-      logger.debug("request(): responseJson = " + responseJson);
 
       return responseJson;
    }
